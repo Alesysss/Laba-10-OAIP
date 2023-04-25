@@ -33,6 +33,8 @@
             toolStripButton1 = new ToolStripSplitButton();
             открытьФайлToolStripMenuItem = new ToolStripMenuItem();
             сгенерироватьНаборToolStripMenuItem = new ToolStripMenuItem();
+            toolStripButton2 = new ToolStripSplitButton();
+            выводСтатистикиToolStripMenuItem = new ToolStripMenuItem();
             label1 = new Label();
             radioButtonМВыб = new RadioButton();
             radioButton1 = new RadioButton();
@@ -47,8 +49,6 @@
             label8 = new Label();
             listBox1 = new ListBox();
             buttonClear = new Button();
-            toolStripButton2 = new ToolStripSplitButton();
-            выводСтатистикиToolStripMenuItem = new ToolStripMenuItem();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -85,6 +85,23 @@
             сгенерироватьНаборToolStripMenuItem.Size = new Size(246, 26);
             сгенерироватьНаборToolStripMenuItem.Text = "Сгенерировать набор";
             сгенерироватьНаборToolStripMenuItem.Click += сгенерироватьНаборToolStripMenuItem_Click;
+            // 
+            // toolStripButton2
+            // 
+            toolStripButton2.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton2.DropDownItems.AddRange(new ToolStripItem[] { выводСтатистикиToolStripMenuItem });
+            toolStripButton2.Image = (Image)resources.GetObject("toolStripButton2.Image");
+            toolStripButton2.ImageTransparentColor = Color.Magenta;
+            toolStripButton2.Name = "toolStripButton2";
+            toolStripButton2.Size = new Size(79, 24);
+            toolStripButton2.Text = "Анализ";
+            toolStripButton2.Click += toolStripButton2_Click;
+            // 
+            // выводСтатистикиToolStripMenuItem
+            // 
+            выводСтатистикиToolStripMenuItem.Name = "выводСтатистикиToolStripMenuItem";
+            выводСтатистикиToolStripMenuItem.Size = new Size(215, 26);
+            выводСтатистикиToolStripMenuItem.Text = "Вывод статистики";
             // 
             // label1
             // 
@@ -221,23 +238,6 @@
             buttonClear.UseVisualStyleBackColor = true;
             buttonClear.Click += buttonClear_Click;
             // 
-            // toolStripButton2
-            // 
-            toolStripButton2.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            toolStripButton2.DropDownItems.AddRange(new ToolStripItem[] { выводСтатистикиToolStripMenuItem });
-            toolStripButton2.Image = (Image)resources.GetObject("toolStripButton2.Image");
-            toolStripButton2.ImageTransparentColor = Color.Magenta;
-            toolStripButton2.Name = "toolStripButton2";
-            toolStripButton2.Size = new Size(79, 24);
-            toolStripButton2.Text = "Анализ";
-            toolStripButton2.Click += toolStripButton2_Click;
-            // 
-            // выводСтатистикиToolStripMenuItem
-            // 
-            выводСтатистикиToolStripMenuItem.Name = "выводСтатистикиToolStripMenuItem";
-            выводСтатистикиToolStripMenuItem.Size = new Size(224, 26);
-            выводСтатистикиToolStripMenuItem.Text = "Вывод статистики";
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -284,9 +284,9 @@
         private Label label7;
         private Label label9;
         private Label label8;
-        private ListBox listBox1;
         private Button buttonClear;
         private ToolStripSplitButton toolStripButton2;
         private ToolStripMenuItem выводСтатистикиToolStripMenuItem;
+        public ListBox listBox1;
     }
 }
