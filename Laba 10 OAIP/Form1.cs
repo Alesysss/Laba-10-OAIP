@@ -6,5 +6,20 @@ namespace Laba_10_OAIP
         {
             InitializeComponent();
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButtonÌÂûá_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonÑîðò_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
