@@ -43,10 +43,10 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            label6 = new Label();
+            labelCountComparison = new Label();
             label7 = new Label();
-            label9 = new Label();
-            label8 = new Label();
+            labelNumberOfPermutations = new Label();
+            labelTimeSort = new Label();
             listBox1 = new ListBox();
             buttonClear = new Button();
             toolStrip1.SuspendLayout();
@@ -183,14 +183,14 @@
             label5.TabIndex = 8;
             label5.Text = "Время сортировки:";
             // 
-            // label6
+            // labelCountComparison
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(194, 229);
-            label6.Name = "label6";
-            label6.Size = new Size(17, 20);
-            label6.TabIndex = 9;
-            label6.Text = "0";
+            labelCountComparison.AutoSize = true;
+            labelCountComparison.Location = new Point(194, 229);
+            labelCountComparison.Name = "labelCountComparison";
+            labelCountComparison.Size = new Size(17, 20);
+            labelCountComparison.TabIndex = 9;
+            labelCountComparison.Text = "0";
             // 
             // label7
             // 
@@ -200,23 +200,23 @@
             label7.Size = new Size(0, 20);
             label7.TabIndex = 10;
             // 
-            // label9
+            // labelNumberOfPermutations
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(217, 272);
-            label9.Name = "label9";
-            label9.Size = new Size(17, 20);
-            label9.TabIndex = 12;
-            label9.Text = "0";
+            labelNumberOfPermutations.AutoSize = true;
+            labelNumberOfPermutations.Location = new Point(217, 272);
+            labelNumberOfPermutations.Name = "labelNumberOfPermutations";
+            labelNumberOfPermutations.Size = new Size(17, 20);
+            labelNumberOfPermutations.TabIndex = 12;
+            labelNumberOfPermutations.Text = "0";
             // 
-            // label8
+            // labelTimeSort
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(168, 315);
-            label8.Name = "label8";
-            label8.Size = new Size(17, 20);
-            label8.TabIndex = 13;
-            label8.Text = "0";
+            labelTimeSort.AutoSize = true;
+            labelTimeSort.Location = new Point(168, 315);
+            labelTimeSort.Name = "labelTimeSort";
+            labelTimeSort.Size = new Size(17, 20);
+            labelTimeSort.TabIndex = 13;
+            labelTimeSort.Text = "0";
             // 
             // listBox1
             // 
@@ -245,10 +245,10 @@
             ClientSize = new Size(1506, 793);
             Controls.Add(buttonClear);
             Controls.Add(listBox1);
-            Controls.Add(label8);
-            Controls.Add(label9);
+            Controls.Add(labelTimeSort);
+            Controls.Add(labelNumberOfPermutations);
             Controls.Add(label7);
-            Controls.Add(label6);
+            Controls.Add(labelCountComparison);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -280,13 +280,13 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private Label label6;
         private Label label7;
-        private Label label9;
-        private Label label8;
         private Button buttonClear;
         private ToolStripSplitButton toolStripButton2;
         private ToolStripMenuItem выводСтатистикиToolStripMenuItem;
         public ListBox listBox1;
+        public Label labelCountComparison;
+        public Label labelNumberOfPermutations;
+        public Label labelTimeSort;
     }
 }

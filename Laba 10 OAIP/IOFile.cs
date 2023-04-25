@@ -127,7 +127,7 @@ namespace Laba_10_OAIP
         }
         public static void SaveData(string text = "", bool flag = false)
         {
-            17
+           
         content += text;
             if (flag == false)
             {
