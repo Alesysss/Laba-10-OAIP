@@ -21,5 +21,10 @@ namespace Laba_10_OAIP
         {
 
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
