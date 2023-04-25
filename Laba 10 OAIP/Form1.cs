@@ -31,5 +31,20 @@ namespace Laba_10_OAIP
         {
 
         }
+
+        private void îòêğûòüÔàéëToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ñãåíåğèğîâàòüÍàáîğToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
