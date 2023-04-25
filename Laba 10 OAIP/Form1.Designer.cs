@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             toolStrip1 = new ToolStrip();
-            toolStripButton2 = new ToolStripButton();
             toolStripButton1 = new ToolStripSplitButton();
             открытьФайлToolStripMenuItem = new ToolStripMenuItem();
             сгенерироватьНаборToolStripMenuItem = new ToolStripMenuItem();
+            toolStripButton2 = new ToolStripButton();
             label1 = new Label();
             radioButtonМВыб = new RadioButton();
             radioButton1 = new RadioButton();
@@ -47,6 +47,7 @@
             label9 = new Label();
             label8 = new Label();
             listBox1 = new ListBox();
+            buttonClear = new Button();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -59,15 +60,6 @@
             toolStrip1.Size = new Size(1506, 27);
             toolStrip1.TabIndex = 0;
             toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripButton2
-            // 
-            toolStripButton2.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            toolStripButton2.Image = (Image)resources.GetObject("toolStripButton2.Image");
-            toolStripButton2.ImageTransparentColor = Color.Magenta;
-            toolStripButton2.Name = "toolStripButton2";
-            toolStripButton2.Size = new Size(64, 24);
-            toolStripButton2.Text = "Анализ";
             // 
             // toolStripButton1
             // 
@@ -90,6 +82,15 @@
             сгенерироватьНаборToolStripMenuItem.Name = "сгенерироватьНаборToolStripMenuItem";
             сгенерироватьНаборToolStripMenuItem.Size = new Size(246, 26);
             сгенерироватьНаборToolStripMenuItem.Text = "Сгенерировать набор";
+            // 
+            // toolStripButton2
+            // 
+            toolStripButton2.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton2.Image = (Image)resources.GetObject("toolStripButton2.Image");
+            toolStripButton2.ImageTransparentColor = Color.Magenta;
+            toolStripButton2.Name = "toolStripButton2";
+            toolStripButton2.Size = new Size(64, 24);
+            toolStripButton2.Text = "Анализ";
             // 
             // label1
             // 
@@ -216,11 +217,22 @@
             listBox1.TabIndex = 14;
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
+            // buttonClear
+            // 
+            buttonClear.Location = new Point(16, 360);
+            buttonClear.Name = "buttonClear";
+            buttonClear.Size = new Size(142, 29);
+            buttonClear.TabIndex = 15;
+            buttonClear.Text = "Зачистка!";
+            buttonClear.UseVisualStyleBackColor = true;
+            buttonClear.Click += buttonClear_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1506, 793);
+            Controls.Add(buttonClear);
             Controls.Add(listBox1);
             Controls.Add(label8);
             Controls.Add(label9);
@@ -263,5 +275,6 @@
         private Label label9;
         private Label label8;
         private ListBox listBox1;
+        private Button buttonClear;
     }
 }

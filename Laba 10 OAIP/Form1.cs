@@ -26,5 +26,10 @@ namespace Laba_10_OAIP
         {
 
         }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
