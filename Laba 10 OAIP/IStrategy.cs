@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Laba_10_OAIP
 {
-    internal class IStrategy
+    public interface IStrategy
     {
+        int[] Algorithm(int[] mas, bool flag = true);
     }
 }

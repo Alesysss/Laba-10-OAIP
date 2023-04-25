@@ -94,8 +94,7 @@ namespace Laba_10_OAIP
                     }
                     else
                     {
-                        MessageBox.Show("Некорректный формат загружаемого
-                       файла.");
+                        MessageBox.Show("Некорректный формат загружаемого файла.");
                     break;
                     }
                 }
