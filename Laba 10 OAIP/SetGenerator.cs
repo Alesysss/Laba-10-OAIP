@@ -47,7 +47,7 @@ namespace Laba_10_OAIP
            || (int.Parse(textBoxCountElements.Text) < trackBar1.Minimum))
             {
                 label2.Text = "Введенное значение вышло \n за допустимый интервал.";
-            this.Height = 200;
+                this.Height = 200;
             }
 
         }

@@ -13,7 +13,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 namespace Laba_10_OAIP
 {
     public partial class Form1 : Form
-    { 
+    {
         public Context context;
         public int count = 0;
 
@@ -144,6 +144,9 @@ namespace Laba_10_OAIP
 
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
