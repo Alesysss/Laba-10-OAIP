@@ -37,7 +37,7 @@
             выводСтатистикиToolStripMenuItem = new ToolStripMenuItem();
             label1 = new Label();
             radioButtonМВыб = new RadioButton();
-            radioButton1 = new RadioButton();
+            radioButtonШ = new RadioButton();
             buttonСорт = new Button();
             label2 = new Label();
             label3 = new Label();
@@ -100,8 +100,9 @@
             // выводСтатистикиToolStripMenuItem
             // 
             выводСтатистикиToolStripMenuItem.Name = "выводСтатистикиToolStripMenuItem";
-            выводСтатистикиToolStripMenuItem.Size = new Size(215, 26);
+            выводСтатистикиToolStripMenuItem.Size = new Size(224, 26);
             выводСтатистикиToolStripMenuItem.Text = "Вывод статистики";
+            выводСтатистикиToolStripMenuItem.Click += выводСтатистикиToolStripMenuItem_Click;
             // 
             // label1
             // 
@@ -125,16 +126,17 @@
             radioButtonМВыб.UseVisualStyleBackColor = true;
             radioButtonМВыб.CheckedChanged += radioButtonМВыб_CheckedChanged;
             // 
-            // radioButton1
+            // radioButtonШ
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(15, 104);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(236, 24);
-            radioButton1.TabIndex = 3;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Сортировка методом вставок";
-            radioButton1.UseVisualStyleBackColor = true;
+            radioButtonШ.AutoSize = true;
+            radioButtonШ.Location = new Point(15, 104);
+            radioButtonШ.Name = "radioButtonШ";
+            radioButtonШ.Size = new Size(229, 24);
+            radioButtonШ.TabIndex = 3;
+            radioButtonШ.TabStop = true;
+            radioButtonШ.Text = "Сортировка методом Шелла";
+            radioButtonШ.UseVisualStyleBackColor = true;
+            radioButtonШ.CheckedChanged += radioButtonШ_CheckedChanged;
             // 
             // buttonСорт
             // 
@@ -254,7 +256,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(buttonСорт);
-            Controls.Add(radioButton1);
+            Controls.Add(radioButtonШ);
             Controls.Add(radioButtonМВыб);
             Controls.Add(label1);
             Controls.Add(toolStrip1);
@@ -274,7 +276,7 @@
         private ToolStripMenuItem сгенерироватьНаборToolStripMenuItem;
         private Label label1;
         private RadioButton radioButtonМВыб;
-        private RadioButton radioButton1;
+        private RadioButton radioButtonШ;
         private Button buttonСорт;
         private Label label2;
         private Label label3;
