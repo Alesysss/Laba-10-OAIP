@@ -20,7 +20,6 @@ namespace Laba_10_OAIP
         public Form1()
         {
             InitializeComponent();
-            InitializeComponent();
             saveFileDialog1.Filter = "Text files(*.txt)|*.txt|All files(*.*) | *.* ";
             openFileDialog1.Filter = "Text files(*.txt)|*.txt|All files(*.*) | *.* ";
             IOFile.form1 = this;

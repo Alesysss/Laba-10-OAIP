@@ -118,8 +118,7 @@ namespace Laba_10_OAIP
         public static void LoadData()
         {
             OpenLoadDialogForm();
-            using (StreamReader sr = new StreamReader(path,
-           System.Text.Encoding.Default))
+            using (StreamReader sr = new StreamReader(path, System.Text.Encoding.Default))
             {
                 Separator(sr);
                 sr.Close();

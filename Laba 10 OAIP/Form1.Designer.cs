@@ -49,6 +49,8 @@
             labelTimeSort = new Label();
             listBox1 = new ListBox();
             buttonClear = new Button();
+            saveFileDialog1 = new SaveFileDialog();
+            openFileDialog1 = new OpenFileDialog();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -258,6 +260,7 @@
             // listBox1
             // 
             listBox1.BackColor = Color.FromArgb(250, 228, 238);
+            listBox1.Cursor = Cursors.WaitCursor;
             listBox1.Font = new Font("Tahoma", 11F, FontStyle.Regular, GraphicsUnit.Point);
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 22;
@@ -279,6 +282,10 @@
             buttonClear.Text = "Зачистка!";
             buttonClear.UseVisualStyleBackColor = false;
             buttonClear.Click += buttonClear_Click;
+            // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form1
             // 
@@ -302,6 +309,7 @@
             Controls.Add(radioButtonМВыб);
             Controls.Add(label1);
             Controls.Add(toolStrip1);
+            Cursor = Cursors.No;
             Name = "Form1";
             Text = "Form1";
             toolStrip1.ResumeLayout(false);
@@ -332,5 +340,7 @@
         public Label labelCountComparison;
         public Label labelNumberOfPermutations;
         public Label labelTimeSort;
+        public OpenFileDialog openFileDialog1;
+        public SaveFileDialog saveFileDialog1;
     }
 }
